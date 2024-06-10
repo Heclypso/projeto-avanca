@@ -66,6 +66,10 @@ p {
   padding-left: 10%;
 }
 
+.p-final {
+  font-size: 27px;
+}
+
 .especial-p {
   font-size: 22px;
   padding-bottom: 1%;
@@ -95,7 +99,7 @@ p {
 }
 
 .especial-b {
-  margin-left: 0;
+  margin-left: 9%;
   margin-top: 3%;
 }
 
@@ -119,7 +123,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: rgb(216, 216, 216);
 }
 
 .arrow {
@@ -132,12 +136,11 @@ img {
     margin-right: 10px;
 }
 
-
 </style>
 </head>
 <body>
 
-<section>
+<section id="1">
     <div class="container">
         <div class="skills-section">
             
@@ -167,11 +170,11 @@ img {
                 <p> O que eu mais me orgulho na minha historia é: A minha persistencia.</p>
             
             </p>
-        
+            <button class="button">Hello World!</button>
         </div>
 </section>
 
-<section>
+<section id="2">
     <div class="container">
         <div class="skills-section">
             
@@ -191,7 +194,7 @@ img {
         </div>
 </section>
 
-<section>
+<section id="3">
     <div class="container">
         <div class="skills-section">
             
@@ -204,7 +207,7 @@ img {
         </div>
 </section>
 
-<section>
+<section id="4">
     <div class="container">
         <div class="skills-section">
             
@@ -229,21 +232,7 @@ img {
         </div>
 </section>
 
-<section>
-  <div class="container">
-      <div class="skills-section">
-          
-          <div class="quote">Vida Profissional</div>
-          <hr>
-          <h2>Tecnico em Análise e Desenvolvimento de Sistemas</h2>
-          <h2>Engenheiro Front-End</h2>
-          
-          <button class="button">Hello World!</button>
-      
-      </div>
-</section>
-
-<section>
+<section id="5">
   <div class="container">
       <div class="skills-section">
           <div class="quote">Cotidiano na Empresa</div>
@@ -271,7 +260,7 @@ img {
 <!-- Section Melhorias -->
 
   <!-- 1º Melhoria -->
-<section>
+<section id="6">
   <div class="container">
       <div class="skills-section">
         
@@ -293,7 +282,7 @@ img {
 </section> 
 
   <!-- 2º Melhoria -->
-<section>
+<section id="7">
   <div class="container">
       <div class="skills-section">
           <div class="quote">2º Melhoria</div>
@@ -322,21 +311,69 @@ img {
 
 <!-- Section Valorização Pessoal / Construindo O Futuro -->
 
-<section>
-  <div class="container">
+<section id="8">
+    <div class="container">
       <div class="skills-section">
           
-          <div class="quote">Valorização pessoal / Construindo O Futuro</div>
+          <div class="quote">Construindo O Futuro</div>
           <hr>
-            <p>
-              Eu espero me tornar um grande programador de sucesso usando como base toda a minha experiencia juntamente com o conteúdo que eu aprendi na espro e 
-              trabalhando
-              na ype e um dia montar o meu próprio escritorio de programação.
+            <p class="p-final">
+              Eu vou continuar estudando e espero me tornar um grande programador de sucesso usando como base toda a minha experiencia juntamente com o conteúdo que eu aprendi na espro e 
+              trabalhando na ype e um dia montar o meu próprio escritorio de programação.
             </p>
-          <button class="button">Hello World!</button>
       
       </div>
+    </div>
 </section> 
+<script>
+  // Obtém todas as seções
+  var sections = document.querySelectorAll('section');
+  // Define a seção atual como a primeira
+  var currentSection = 0;
+
+  // Função para ocultar todas as seções, exceto a atual
+  function hideSections() {
+    sections.forEach(function(section, index) {
+      if (index !== currentSection) {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  // Função para exibir a próxima seção
+  function showNextSection() {
+    if (currentSection < sections.length - 1) {
+      currentSection++;
+      hideSections();
+      sections[currentSection].style.display = 'block';
+    }
+  }
+
+  // Função para exibir a seção anterior
+  function showPreviousSection() {
+    if (currentSection > 0) {
+      currentSection--;
+      hideSections();
+      sections[currentSection].style.display = 'block';
+    }
+  }
+
+  // Evento de tecla pressionada
+  document.addEventListener('keydown', function(event) {
+    // Verifica se a tecla pressionada é a seta para a direita
+    if (event.key === 'ArrowRight') {
+      showNextSection(); // Exibe a próxima seção
+    }
+    // Verifica se a tecla pressionada é a seta para a esquerda
+    else if (event.key === 'ArrowLeft') {
+      showPreviousSection(); // Exibe a seção anterior
+    }
+  });
+
+  // Inicia ocultando todas as seções, exceto a primeira
+  hideSections();
+  sections[currentSection].style.display = 'block';
+</script>
   <script src="main.js"></script>
 </body>
 </html>
