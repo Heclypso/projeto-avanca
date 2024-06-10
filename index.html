@@ -6,7 +6,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #242731;
 }
 
 .header {
@@ -23,10 +23,12 @@ section {
 
 .container {
     width: 1366px;
+    min-height: 650px;
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
-    padding-top: 5% ;
-    background-color: #ffffff;
+    padding-top: 3% ;
+    background-image: url(./images/5594016.jpg);
     }
 
 .skills-section {
@@ -36,6 +38,11 @@ section {
   padding-left: 5%;
 }
 
+.skills-section img {
+  width: 180%;
+  padding-bottom: 6%;
+}
+
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
@@ -43,31 +50,53 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #222;
-  margin-bottom: 10px;
+  color: #555555;
+  padding-left: 7%;
+}
+
+h3 {
+  padding-left: 5%;
+  color: #363636;
 }
 
 p {
   font-size: 16px;
   line-height: 1.5;
   color: #555;
+  padding-left: 10%;
+}
+
+.especial-p {
+  font-size: 22px;
+  padding-bottom: 1%;
 }
 
 .quote {
   font-size: 48px;
-  color: #ff2222;
+  color: #332020;
   margin-bottom: 20px;
 }
 
+.sub-quote {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
 .button {
-  background-color: #ff2222;
+  background-color: #8a2e2e;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+}
+
+.especial-b {
+  margin-left: 0;
+  margin-top: 3%;
 }
 
 .button:hover {
@@ -90,63 +119,53 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: red;
 }
 
 .arrow {
+    font-size: 40px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .arrow::before {
     margin-right: 10px;
 }
 
-.arrow.active {
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-}
 
 </style>
 </head>
 <body>
-
-<div class="header">
-
-  <h1>Projeto Avança</h1>
-  
-</div>
 
 <section>
     <div class="container">
         <div class="skills-section">
             
             <div class="quote">Quem sou eu?</div>
+            <h2>- Gabriel Henrique Armelin Munhak</h2>
             <p>    
-              <hr>       
-              Local de nacimento: Nasci Amparo 
-              <hr>
-              A minha cor preferida é: Preto
-              <hr>
-              A minha comida preferida é: Chocolate Amargo
-              <hr>
-              A minha musica preferida é: Breaking the Habbit do Link Park
-              <hr>
-              A minha maior qualidade é: Sempre dar o meu melhor e me dedicar ao máximo em tudo o que faço.
-              <hr>
-              O meu maior sucesso é: Recentemente ter conseguido tres freelances de programador.
-              <hr>
-              O que eu não consigo fazer sozinho: Apresentações
-              <hr>
-              A pessoa que eu mais admiro na vida: Nikola Tesla
-              <hr>
-              A pessoa que eu nunca quero ser é: Uma pessoa egoista e arrogante.
-              <hr>
-              O que eu mais gosto de aprender: Programação
-              <hr>
-              O que eu mais gosto de ensinar: Tudo no geral, não tem uma coisa que eu gosto mais. 
-              <hr>
-              O que eu mais me orgulho na minha historia é: A minha persistencia.
+                <p>Cores preferidas Preto e Vermelho</p>
+
+                <p>A minha comida preferida é: Chocolate Amargo</p>
+
+                <p>A minha musica preferida é: Breaking the Habbit do Link Park</p>
+
+                <p>A minha maior qualidade é: Sempre dar o meu melhor e me dedicar ao máximo em tudo o que faço.</p>
+
+                <p>O meu maior sucesso é: Recentemente ter conseguido tres freelances de programador.</p>
+
+                <p>O que eu não consigo fazer sozinho: Apresentações</p>
+
+                <p>A pessoa que eu mais admiro na vida: Nikola Tesla</p>
+
+                <p>A pessoa que eu nunca quero ser é: Uma pessoa egoista e arrogante.</p>
+
+                <p>O que eu mais gosto de aprender: Programação</p>
+
+                <p>O que eu mais gosto de ensinar: Tudo no geral, não tem uma coisa que eu gosto mais.</p>
+
+                <p> O que eu mais me orgulho na minha historia é: A minha persistencia.</p>
+            
             </p>
         
         </div>
@@ -156,37 +175,18 @@ img {
     <div class="container">
         <div class="skills-section">
             
-            <div class="quote">Vida Profissional</div>
-            <hr>
-            <h2>Tecnico em Análise e Desenvolvimento de Sistemas</h2>
-            <p>Engenheiro Front-End</p>
-            <button class="button">Hello World!</button>
-        
-        </div>
-</section>
-
-<section>
-  <div class="container">
-      <div class="skills-section">
-          
-          <div class="quote">Tecnologias</div>
-          <hr>
-          <h2>Node.js e etc</h2>
-          <button class="button">Hello World!</button>
-      
-      </div>
-</section>
-
-<section>
-    <div class="container">
-        <div class="skills-section">
-            
             <div class="quote">Bandeira</div>
             <hr>
-            <h2>Gabriel Henrique Armelin Munhak</h2>
-            <p>Lorem ipsum dolor sit, amet.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis illum perspiciatis in explicabo incidunt dolor, similique dolorum. Sint tenetur dignissimos, inventore laudantium sunt voluptate quas ipsam. Quas, aliquam! Neque.</p>
-            <button class="button">Hello World!</button>
+            <h2>- Encode</h2>
+            <p>Lema: Nada é impossivel se você dedicar tempo e esforço para isso</p>
+            <h2>Hino: Trecho de In The End [Link Park]</h2>
+                <p>Time is a valuable thing</p>
+                <p>Watch it fly by as the pendulum swings</p>
+                <p>Watch it count down to the end of the day</p>
+                <p>The clock ticks life away</p>
+                <p>It's so unreal</p>
+            
+            <button class="button especial-b">Hello World!</button>
         
         </div>
 </section>
@@ -199,6 +199,7 @@ img {
             <hr>
             <h2>Doação de Roupas e Agasalhos</h2>
             <h2>Doação de Brinquedos</h2>
+            <button class="button">Hello World!</button>
 
         </div>
 </section>
@@ -209,15 +210,14 @@ img {
             
             <div class="quote">Espectativa VS Realidade</div>
             <hr>
-            <h1>Espro</h1>
+            <h2>Espro</h2>
             <p>
               Espectativa: EAD e chato.
             </p>
             <p> 
               Realidade: Presencial e muito enriquecedor.
-            
             </p>
-            <h1>Empresa</h1>
+            <h2>Empresa</h2>
             <p>
               Espectativa: Ambiente formal, sério e estressante.
             </p>
@@ -232,38 +232,95 @@ img {
 <section>
   <div class="container">
       <div class="skills-section">
-          <div class="quote">Cotidiano na Empresa</div>
+          
+          <div class="quote">Vida Profissional</div>
           <hr>
-          <h2>Confirmação de Ordens</h2>
-          <div class="arrow-list">
-              <div class="arrow" data-index="0">Recolher ordens</div>
-              <div class="arrow" data-index="1">Separar em Eletricas e Mecanicas</div>
-              <div class="arrow" data-index="2">Confirmar os campos e mudar o status</div>
-              <div class="arrow" data-index="3">Detalhar as anomalias</div>
-              <div class="arrow" data-index="4">Colocar na planilha de aceite técnico</div>
-              <div class="arrow" data-index="5">Colocar na planilha de encerramento</div>
-              <div class="arrow" data-index="6">Imprimir, grampear a progrmaação e fazer a folha de rosto a programação</div>
-              <div class="arrow" data-index="7">Guardar as ordens da semana</div>
-          </div>
+          <h2>Tecnico em Análise e Desenvolvimento de Sistemas</h2>
+          <h2>Engenheiro Front-End</h2>
+          
+          <button class="button">Hello World!</button>
+      
       </div>
-  </div>
 </section>
 
 <section>
   <div class="container">
       <div class="skills-section">
+          <div class="quote">Cotidiano na Empresa</div>
+          <hr>
+          <h2>Confirmação de Ordens</h2>
+            <div class="arrow-list">
+              
+                <div class="arrow" data-index="0">Recolher ordens</div>
+                <div class="arrow" data-index="1">Separar em Elétricas e Mecânicas</div>
+                <div class="arrow" data-index="2">Confirmar ordens e mudar o status</div>
+                <div class="arrow" data-index="3">Detalhar as anomalias</div>
+                <div class="arrow" data-index="4">Colocar na planilha de aceite técnico</div>
+                <div class="arrow" data-index="5">Colocar na planilha de encerramento</div>
+                <div class="arrow" data-index="6">Imprimir, grampear a programação e fazer a folha de rosto a programação</div>
+                <div class="arrow" data-index="7">Guardar as ordens da semana</div>
           
-          <div class="quote">Melhoria</div>
+            </div>
+            <img src="" alt="">
+          <button class="button">Hello World!</button>
+      </div>
+  </div>
+</section>
+
+
+<!-- Section Melhorias -->
+
+  <!-- 1º Melhoria -->
+<section>
+  <div class="container">
+      <div class="skills-section">
         
-          <img src="./images/imagem.png" alt="">
-          <img src="./images/imagem (1).png" alt="">
-          <img src="./images/imagem (2).png" alt="">
-          <img src="./images/imagem (3).png" alt="">
+        
+
+          <div class="quote">1º Melhoria </div>
+            <h2>Folha de Rosto</h2>
+            
+              <div>
+
+                <img src="./images/imagem.png" alt="">
+                <img src="./images/imagem (1).png" alt="">
+                <img src="./images/imagem (2).png" alt="">
+                <img src="./images/imagem (3).png" alt="">
+
+              </div>
+
+      </div>
+</section> 
+
+  <!-- 2º Melhoria -->
+<section>
+  <div class="container">
+      <div class="skills-section">
+          <div class="quote">2º Melhoria</div>
+            <h2>Planilha de Detalhamento de notas</h2>
+
+              <div>
+                <h3>- Antes</h3>
+                <img src="./images/1.png" alt="">
+                <img src="./images/2.png" alt="">
+
+                <h3>- Depois</h3>
+                <img src="./images/3.png" alt="">
+                <img src="./images/4.png" alt="">
+                <p class="especial-p">
+                  Redução no tamanho do arquivo: Aproximadamente 98,43%
+                  Redução no uso de memória RAM: Aproximadamente 33,15%
+                </p>
+          
+              </div>
 
           <button class="button">Hello World!</button>
       
       </div>
 </section> 
+
+
+<!-- Section Valorização Pessoal / Construindo O Futuro -->
 
 <section>
   <div class="container">
@@ -271,11 +328,11 @@ img {
           
           <div class="quote">Valorização pessoal / Construindo O Futuro</div>
           <hr>
-          <p>
-            Eu espero me tornar um grande programador de sucesso usando como base toda a minha experiencia juntamente com o conteúdo que eu aprendi na espro e 
-            trabalhando
-            na ype e um dia montar o meu próprio escritorio de programação.
-        </p>
+            <p>
+              Eu espero me tornar um grande programador de sucesso usando como base toda a minha experiencia juntamente com o conteúdo que eu aprendi na espro e 
+              trabalhando
+              na ype e um dia montar o meu próprio escritorio de programação.
+            </p>
           <button class="button">Hello World!</button>
       
       </div>
