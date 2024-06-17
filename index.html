@@ -2,7 +2,6 @@
 <html>
 <head>
 <style>
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -22,19 +21,26 @@ section {
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    padding-top: 3% ;
+    padding-top: 3%;
     background-color: white;
-    }
+}
+
+.sub-container {
+  width: 1366px;
+  min-height: 650px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
 
 .especial-container {
   background-color: white;
 }
 
 .has-backgorund {
-  background-image: url(./images/5594016.jpg);
+  background-image: url(https://servidor-estatico-alpha-six.vercel.app/5594016.jpg);
   background-repeat: no-repeat;
 }
-
 
 .skills-section {
   width: 100%;
@@ -87,6 +93,10 @@ p {
   margin-bottom: 20px;
 }
 
+.especial-h3 {
+  font-size: 24px;
+}
+
 .sub-quote {
   font-size: 35px;
   margin-bottom: 12px;
@@ -125,6 +135,12 @@ img {
   width: 1366px;
 }
 
+.tesla-img {
+    width: 400px; 
+    height: auto;
+    padding-left: 7%;
+}
+
 .arrow-list {
     display: flex;
     flex-direction: column;
@@ -142,6 +158,16 @@ img {
     margin-right: 10px;
 }
 
+.skills-section img.tesla-img {
+    width: 200px;
+    height: auto;
+}
+
+.skills-section div {
+    text-align: left;
+}
+
+
 </style>
 </head>
 <body>
@@ -149,8 +175,7 @@ img {
 <section id="1">
     <div class="container has-backgorund">
         <div class="skills-section">
-            
-            <div class="quote">Quem sou eu?</div>
+            <div style="padding-bottom: 4%;" class="quote">Quem sou eu?</div>
             <h2>- Gabriel Henrique Armelin Munhak</h2>
             <p>    
                 <p>Cores preferidas Preto e Vermelho</p>
@@ -164,57 +189,79 @@ img {
                 <p>O meu maior sucesso é: Recentemente ter conseguido tres freelances de programador.</p>
 
                 <p>O que eu não consigo fazer sozinho: Apresentações</p>
-
-                <p>A pessoa que eu mais admiro na vida: Nikola Tesla</p>
-
-                <p>A pessoa que eu nunca quero ser é: Uma pessoa egoista e arrogante.</p>
-
-                <p>O que eu mais gosto de aprender: Programação</p>
-
-                <p>O que eu mais gosto de ensinar: Tudo no geral, não tem uma coisa que eu gosto mais.</p>
-
-                <p> O que eu mais me orgulho na minha historia é: A minha persistencia.</p>
-            
             </p>
-            <button class="button">Hello World!</button>
         </div>
 </section>
 
 <section id="2">
-    <div class="container">
-        <div class="skills-section">
-            
-            <div class="quote">Bandeira</div>
-            <hr>
-            <img src="./images/The Encode.png" alt="">
-            <div class="especial-container">
-            <h2>Hino: Trecho de In The End [Link Park]</h2>
-                <p>Time is a valuable thing</p>
-                <p>Watch it fly by as the pendulum swings</p>
-                <p>Watch it count down to the end of the day</p>
-                <p>The clock ticks life away</p>
-                <p>It's so unreal</p>
-            </div>
-            
-            <button class="button especial-b">Hello World!</button>
-        
-        </div>
+  <div class="sub-container" style=" flex-direction: column; padding-left: 5%; padding-top: 5%;">
+      <div class="quote">A pessoa que eu mais admiro na vida</div>
+      <div style="padding-bottom: 0; color: #332020; padding-top: 2%; font-size: 28px; padding-left: 12%;">Nikola Tesla</div>
+      <div class="skills-section" style="display: flex; align-items: flex-start; justify-content: left;">
+          <img style="padding-right: 2%;" class="tesla-img" src="https://servidor-estatico-alpha-six.vercel.app/nikola_tesla.jpeg" alt="">
+          <div>
+              <h4 style="font-size: 24px; color: #555555;">Invenções de Tesla</h4>
+              <p>Energia Sem Fio</p>
+              <p>Corrente Alternada</p>
+              <p>Motor de Indução</p>
+              <p>Rádio</p>
+          </div>
+      </div>
+  </div>
 </section>
 
+
+
 <section id="3">
+  <div class="container has-backgorund">
+      <div class="skills-section">
+          
+          <div style="padding-bottom: 3%;" class="quote">Quem sou eu?</div>
+          <div style="font-size: 10px;"> 
+              <p>A pessoa que eu nunca quero ser é: Uma pessoa egoista e arrogante.</p>
+
+              <p>O que eu mais gosto de aprender: Programação</p>
+
+              <p>O que eu mais gosto de ensinar: Tudo no geral, não tem uma coisa que eu gosto mais.</p>
+
+              <p> O que eu mais me orgulho na minha historia é: A minha persistencia.</p>
+          
+          <div>
+      </div>
+</section>
+
+<section id="4">
+  <div class="container">
+      <div class="skills-section">
+          
+          <div class="quote">Bandeira</div>
+          <hr>
+          <img src="https://servidor-estatico-alpha-six.vercel.app/The Encode.png" alt="">
+          <div class="especial-container">
+          <h2>Hino: Trecho de In The End [Link Park]</h2>
+              <p>Time is a valuable thing</p>
+              <p>Watch it fly by as the pendulum swings</p>
+              <p>Watch it count down to the end of the day</p>
+              <p>The clock ticks life away</p>
+              <p>It's so unreal</p>
+          </div>
+      </div>
+</section>
+
+<section id="5">
     <div class="container">
         <div class="skills-section">
             
             <div class="quote">Contribuição Social</div>
             <hr>
-            <h3>Doação de Roupas e Agasalhos</h2>
-            <h3>Doação de Brinquedos</h2>
-            <button class="button">Hello World!</button>
+            <h3 class="especial-h3">Doação de Roupas e Agasalhos</h2>
+            <h3 class="especial-h3">Doação de Brinquedos</h2>
+            
 
         </div>
 </section>
 
-<section id="4">
+<section id="6">
     <div class="container">
         <div class="skills-section">
             
@@ -234,19 +281,19 @@ img {
              <p>
               Realidade: Um ambiente MUITO bom pra trabalhar e bem mais descontraido doque eu imaginava.
             </p>
-            <button class="button">Hello World!</button>
+            
         
         </div>
 </section>
 
-<section id="5">
+<section id="7">
   <div class="container">
       <div class="skills-section">
           <div class="quote">Cotidiano na Empresa</div>
           <hr>
-          <img src="./images/rotina de trabalho.png" alt="">
+          <img src="https://servidor-estatico-alpha-six.vercel.app/rotina de trabalho.png" alt="">
             <img src="" alt="">
-          <button class="button">Hello World!</button>
+
       </div>
   </div>
 </section>
@@ -255,7 +302,7 @@ img {
 <!-- Section Melhorias -->
 
   <!-- 1º Melhoria -->
-<section id="6">
+<section id="8">
   <div class="container">
       <div class="skills-section">
         
@@ -266,10 +313,10 @@ img {
             
               <div>
 
-                <img src="./images/imagem.png" alt="">
-                <img src="./images/imagem (1).png" alt="">
-                <img src="./images/imagem (2).png" alt="">
-                <img src="./images/imagem (3).png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/imagem.png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/imagem (1).png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/imagem (2).png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/imagem (3).png" alt="">
 
               </div>
 
@@ -277,7 +324,7 @@ img {
 </section> 
 
   <!-- 2º Melhoria -->
-<section id="7">
+<section id="9">
   <div class="container">
       <div class="skills-section">
           <div class="quote">2º Melhoria</div>
@@ -285,12 +332,12 @@ img {
 
               <div>
                 <h3>- Antes</h3>
-                <img src="./images/1.png" alt="">
-                <img src="./images/2.png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/1.png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/2.png" alt="">
 
                 <h3>- Depois</h3>
-                <img src="./images/3.png" alt="">
-                <img src="./images/4.png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/3.png" alt="">
+                <img src="https://servidor-estatico-alpha-six.vercel.app/4.png" alt="">
                 <h3 class="especial-p">
                   Redução no tamanho do arquivo: Aproximadamente 98,43%
                   Redução no uso de memória RAM: Aproximadamente 33,15%
@@ -298,7 +345,7 @@ img {
           
               </div>
 
-          <button class="button">Hello World!</button>
+          
       
       </div>
 </section> 
@@ -306,7 +353,7 @@ img {
 
 <!-- Section Valorização Pessoal / Construindo O Futuro -->
 
-<section id="8">
+<section id="10 ">
     <div class="container">
       <div class="skills-section">
           
@@ -320,6 +367,6 @@ img {
       </div>
     </div>
 </section> 
-  <script src="main.js"></script>
+  <script src="navegacao.js"></script>
 </body>
 </html>
